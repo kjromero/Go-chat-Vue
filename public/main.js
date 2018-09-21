@@ -3,10 +3,10 @@
  new Vue({
  	el:'#chat-app',
  	created(){
- 		socket.on("chat message", (msg) => {
+ 		socket.on("chat message",  (msg) =>  {
  			this.messages.push({
  				text: msg,
- 				date: new Date().toLocalString()
+ 				date: new Date().toLocaleString()
  			})
  		})
  	},
